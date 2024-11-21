@@ -1,0 +1,177 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2E2B3E;
+    color: white;
+    line-height: 1.6;
+}
+
+.header {
+    background-color: #4434AE;
+    padding: 1rem 0;
+}
+
+
+.logo img {
+    height: 40px; /* Ajusta la altura del logo */
+}
+
+
+.header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* Espaciado entre logo, menú y Twitter */
+    align-items: center; /* Alinear elementos verticalmente */
+    padding: 0; /* Elimina cualquier padding lateral */
+}
+
+.nav {
+    display: flex;
+    gap: 1rem; /* Espaciado uniforme entre los enlaces del menú */
+    margin: 0; /* Elimina márgenes adicionales */
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: normal; /* Peso normal para enlaces no activos */
+}
+
+.nav a:hover {
+    color: #00d4ff;
+}
+
+.nav a.active {
+    color: #00d4ff !important; /* Forzamos el color turquesa */
+    font-weight: bold;
+}
+
+.twitter-icon {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #00d4ff;
+    color: white;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: transform 0.3s ease;
+    margin-left: 0; /* Elimina el margen adicional */
+}
+
+.twitter-icon i {
+    font-size: 20px;
+}
+
+.twitter-icon:hover {
+    transform: scale(1.1);
+    background-color: #00b3cc;
+}
+
+.header .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.header .nav a {
+    margin-left: 1rem;
+    color: white;
+    text-decoration: none;
+}
+
+.header .nav a:hover {
+    color: #00d4ff;
+}
+
+.main {
+    padding: 2rem;
+}
+
+.schedule {
+    text-align: center;
+    margin-bottom: 2rem; /* Espacio debajo de la sección */
+}
+
+.schedule h1 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 1rem; /* Espacio debajo del título */
+}
+
+.subheader {
+    font-size: 1rem;
+    line-height: 1.5; /* Espaciado entre líneas */
+    color: white;
+}
+
+.subheader .highlight {
+    color: #00d4ff; /* Turquesa para el texto destacado */
+    font-weight: bold;
+    margin-bottom: 0.5rem; /* Espacio entre título y subtítulo */
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr)); /* Asegura que las columnas tengan un tamaño mínimo */
+    gap: 1rem; /* Reduce el espacio entre columnas */
+    justify-content: center; /* Centra las columnas en el contenedor */
+    max-width: 1200px; /* Limita el ancho máximo del grid */
+    margin: 0 auto; /* Centra el grid dentro de la página */
+}
+
+
+.card {
+    padding: 1rem;
+    text-align: left;
+    border-radius: 10px;
+    color: white;
+}
+
+.card-header {
+    display: flex;
+    align-items: center; /* Alinear imagen y título verticalmente */
+    gap: 1rem; /* Espacio entre imagen y título */
+    margin-bottom: 1rem;
+}
+
+.card img {
+    width: 100px; /* Ajusta el tamaño de las imágenes */
+    height: 100px;
+    border-radius: 50%; /* Imagen circular */
+    border: 4px solid white; /* Añade un borde */
+}
+
+.card-header h2 {
+    font-size: 1.2rem;
+    color: #00d4ff; /* Color del título */
+    margin: 0;
+}
+
+.card p {
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+}
+
+.card .links {
+    margin-top: 0.5rem;
+}
+
+.card .links a {
+    margin: 0 0.5rem;
+    color: #00d4ff;
+    text-decoration: none;
+}
+
+.card .links a:hover {
+    text-decoration: underline;
+}
